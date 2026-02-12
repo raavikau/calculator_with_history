@@ -6,6 +6,9 @@ def calculation(a, b, operator):
     elif operator == "*":
         return a * b
     elif operator == "/":
+        if b == 0:
+            print("Error: division by zero")
+            return None
         return a / b
     else:
         print("wrong operator")
