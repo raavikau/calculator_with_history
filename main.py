@@ -13,9 +13,6 @@ def calculation(a, b, operator):
     else:
         print("wrong operator")
 
-def history_clear():
-    pass
-
 def save_history():
     pass
 
