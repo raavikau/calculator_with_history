@@ -14,7 +14,14 @@ def calculation(a, b, operator):
         print("wrong operator")
 
 def save_history():
-    pass
+    try:
+        with open("history.txt", 'r') as readfile:
+            content = readfile.read()
+            if content == "":
+                print("file is empty")
+            print(content)
+    except FileNotFoundError:
+        print("No history file found")
 
 def clear_history():
     pass
