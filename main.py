@@ -31,7 +31,8 @@ def calculator(c, d, operation):
         print("Successfully added")
 
 def clear_history():
-    pass
+    open("calc.txt", "w").close()
+    print("Your history is cleared")
 
 while True:
     choice = input("Enter +, -, *, / or type history, clear, quit ")
